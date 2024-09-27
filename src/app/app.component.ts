@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { CommonModule } from '@angular/common';
@@ -11,7 +11,19 @@ import { LoginComponent } from "./components/login/login.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent
+export class AppComponent implements AfterViewInit
 {
   title = 'tailpdf';
+  @ViewChild('hambugerButton') hambugerButton = ElementRef;
+
+  ngAfterViewInit(): void
+  {
+
+  }
+
+  toggleMenu()
+  {
+    console.log('menu clicked')
+  }
+
 }
