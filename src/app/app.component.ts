@@ -7,13 +7,14 @@ import { LoginComponent } from "./components/login/login.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CommonModule, RouterModule, LoginComponent],
+  imports: [CommonModule, RouterOutlet, NavbarComponent, CommonModule, RouterModule, LoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent implements AfterViewInit
 {
   title = 'tailpdf';
+  hideMenu = true;
   @ViewChild('hambugerButton') hambugerButton = ElementRef;
 
   ngAfterViewInit(): void
@@ -23,7 +24,7 @@ export class AppComponent implements AfterViewInit
 
   toggleMenu()
   {
-    console.log('menu clicked')
+    this.hideMenu = !this.hideMenu;
   }
 
 }

@@ -14,11 +14,11 @@
         </nav>
       </div>
     </section>           
-    <section #mobileMenu (click)="toggleMenu()" id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
-      <button #hamburgerButton (click)="toggleMenu()" class="text-8xl self-end px-6">
+    <section #mobileMenu  (click)="toggleMenu()" id="mobile-menu" class="absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu">
+      <button #hamburgerButton  *ngIf="!hideMenu" class="text-8xl self-end px-6">
         &times;
       </button>
-      <nav aria-label="mobile" class="flex flex-col min-h-screen items-center py-8">
+      <nav aria-label="mobile" class="flex flex-col min-h-screen items-center py-8" *ngIf="!hideMenu">
         <a href="#hero" class="w-full text-center py-6 hover:opacity-80">Home</a>
         <a href="#rockets" class="w-full text-center py-6 hover:opacity-80">Rockets</a>
         <a href="#testimonials" class="w-full text-center py-6 hover:opacity-80">Testimonials</a>
