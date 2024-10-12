@@ -1,0 +1,3253 @@
+{
+    "pipes": [],
+    "interfaces": [
+        {
+            "name": "dopeStat",
+            "id": "interface-dopeStat-38cff20fbea59adb422593e92806f2ee32dc2525998917fb11a396fa8e9199c35a47c01d7b191156d6481e221966928c06528799c9207233f13c68532d3df5fc",
+            "file": "src/app/models/dopeStat.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface dopeStat\n{\n    day: number;\n    cash: number;\n    stokvel: number;\n    debt: number;\n}",
+            "properties": [
+                {
+                    "name": "cash",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "day",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "debt",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                },
+                {
+                    "name": "stokvel",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "dopeStock",
+            "id": "interface-dopeStock-409b8378c01359a4100f61d88c883a4775f85d0bca1dc7ba21639e3dbff3490e8a3f4b7fde9422021f81e65c9336bcaf1e86a414b255cf6c87c0f8199c09beca",
+            "file": "src/app/models/dopeStock.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface dopeStock{    \n    name:string;\n    count:number;\n    price:number;\n}",
+            "properties": [
+                {
+                    "name": "count",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "price",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "dopeTrenchStockItem",
+            "id": "interface-dopeTrenchStockItem-44bc260f66ae005d2bac1b633fbde3981e4278d78458ecab2e1bf5319190d2eefdd90f2bee0442d40d92c12981a886fbccb57da1fa281cfe84c94f591ea810ce",
+            "file": "src/app/models/dopeTrenchStockItem.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface dopeTrenchStockItem{\n    name:string;    \n    quantity:number;\n}",
+            "properties": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "quantity",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "itemTransactedEvent",
+            "id": "interface-itemTransactedEvent-841ce723d56b45866bf1b67544985e872b95732498f5603e06d82c93c09f3a2b6219022e07d58e3c65e715524e52253f8e1f17d5391b108fff718fe03816f513",
+            "file": "src/app/models/itemTransactedEvent.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface itemTransactedEvent{\n    name:string;    \n    price:number|null;\n    quantity:number;\n}",
+            "properties": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "price",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "quantity",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "stockConfiguration",
+            "id": "interface-stockConfiguration-b0404297615e998a59dce7b1ea6eb67ee7844ec14bc09c3f63d30d34ddcc9d7029420958c1bc9b4b40b1e12900ba5b195c5bdf25664e8a6ec17802d9600170a2",
+            "file": "src/app/models/stockConfiguration.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface stockConfiguration{    \n    initialPrice: number,\n    priceVolatility: number,\n    appearance: number,\n    initialStock: number,\n    stockVolatility: number,\n}",
+            "properties": [
+                {
+                    "name": "appearance",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "initialPrice",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "initialStock",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 5
+                },
+                {
+                    "name": "priceVolatility",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                },
+                {
+                    "name": "stockVolatility",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 6
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "Task",
+            "id": "interface-Task-d3b35a9ca1116145849b03756d09fff2750abd8662caab507e3d823737129adcf35234755a629aaf11b5e6270f1ec6cf049785d2f8b028814335937fbca3fbd0",
+            "file": "src/app/models/task.model.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface Task{\n    id?:string;\n    title?:string;\n    state?:string;\n}",
+            "properties": [
+                {
+                    "name": "id",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 2
+                },
+                {
+                    "name": "state",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 4
+                },
+                {
+                    "name": "title",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": true,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "TaskStateModel",
+            "id": "interface-TaskStateModel-1c97e7e5e9f3dfaf6a2d7f119ca4bcc06618d8b143ea0bac4daa8675e04c63c4e3b802e59941550139c78ac1678e0cf39e6f6d97fc68265b5becec6b1d506433",
+            "file": "src/app/state/task.state.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { State, Selector, Action, StateContext } from '@ngxs/store';\nimport { patch, updateItem } from '@ngxs/store/operators';\nimport { Task } from '../models/task.model';\n\n// Defines the actions available to the app\nexport const actions = {\n    ARCHIVE_TASK: 'ARCHIVE_TASK',\n    PIN_TASK: 'PIN_TASK',\n};\n\nexport class ArchiveTask\n{\n    static readonly type = actions.ARCHIVE_TASK;\n\n    constructor(public payload: string) { }\n}\n\nexport class PinTask\n{\n    static readonly type = actions.PIN_TASK;\n\n    constructor(public payload: string) { }\n}\n\n// The initial state of our store when the app loads.\n// Usually you would fetch this from a server\nconst defaultTasks = [\n    { id: '1', title: 'Something', state: 'TASK_INBOX' },\n    { id: '2', title: 'Something more', state: 'TASK_INBOX' },\n    { id: '3', title: 'Something else', state: 'TASK_INBOX' },\n    { id: '4', title: 'Something again', state: 'TASK_INBOX' },\n];\n\nexport interface TaskStateModel\n{\n    tasks: Task[];\n    status: 'idle' | 'loading' | 'success' | 'error';\n    error: boolean;\n}\n\n// Sets the default state\n@State<TaskStateModel>({\n    name: 'taskbox',\n    defaults: {\n        tasks: defaultTasks,\n        status: 'idle',\n        error: false,\n    },\n})\n@Injectable()\nexport class TasksState\n{\n    // Defines a new selector for the error field\n    @Selector()\n    static getError(state: TaskStateModel): boolean\n    {\n        return state.error;\n    }\n\n    @Selector()\n    static getAllTasks(state: TaskStateModel): Task[]\n    {\n        return state.tasks;\n    }\n\n    // Triggers the PinTask action, similar to redux\n    @Action(PinTask)\n    pinTask(\n        { getState, setState }: StateContext<TaskStateModel>,\n        { payload }: PinTask\n    )\n    {\n        const task = getState().tasks.find((task) => task.id === payload);\n\n        if (task)\n        {\n            const updatedTask: Task = {\n                ...task,\n                state: 'TASK_PINNED',\n            };\n            setState(\n                patch({\n                    tasks: updateItem<Task>(\n                        (pinnedTask) => pinnedTask?.id === payload,\n                        updatedTask\n                    ),\n                })\n            );\n        }\n    }\n    // Triggers the archiveTask action, similar to redux\n    @Action(ArchiveTask)\n    archiveTask(\n        { getState, setState }: StateContext<TaskStateModel>,\n        { payload }: ArchiveTask\n    )\n    {\n        const task = getState().tasks.find((task) => task.id === payload);\n        if (task)\n        {\n            const updatedTask: Task = {\n                ...task,\n                state: 'TASK_ARCHIVED',\n            };\n            setState(\n                patch({\n                    tasks: updateItem<Task>(\n                        (archivedTask) => archivedTask?.id === payload,\n                        updatedTask\n                    ),\n                })\n            );\n        }\n    }\n}\n\n",
+            "properties": [
+                {
+                    "name": "error",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 39
+                },
+                {
+                    "name": "status",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "\"idle\" | \"loading\" | \"success\" | \"error\"",
+                    "optional": false,
+                    "description": "",
+                    "line": 38
+                },
+                {
+                    "name": "tasks",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Task[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 37
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "User",
+            "id": "interface-User-d4821beac0e4a852e513391b7470981c4353fdd95a18628bb68136c8695b489ee15b926e2e5031bc26cf30e1508e0a362c3ee13a06734702b4d15af140e485d5",
+            "file": "src/stories/user.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export interface User {\n  name: string;\n}\n",
+            "properties": [
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 2
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        }
+    ],
+    "injectables": [
+        {
+            "name": "EventProcessorService",
+            "id": "injectable-EventProcessorService-697fb0d7f022cb06e7e35635f08d624de34b1a99ea72fe2d0da558b6c6e6889b21e1fdafdbef01b2d85cc51a57117d6e3e40f078fbe2df50ec6ae4e47fd90e5c",
+            "file": "src/app/services/event-processor.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class EventProcessorService {\n\n  constructor() { }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "extends": [],
+            "type": "injectable"
+        },
+        {
+            "name": "MarketService",
+            "id": "injectable-MarketService-af9dc792fbb8240092b555cab0ea89bfae13642e80e69a9e0ae643ff36fd10ce45794eaf1a1b420f3abd5eb92b8a6bde223de75b1a802c9bd00112b575467954",
+            "file": "src/app/services/market.service.ts",
+            "properties": [
+                {
+                    "name": "markets",
+                    "defaultValue": "[\n    {\n      placeName: 'Clarewood',\n      hasHospital: true,\n      hasPoliceStation: true,\n      hasBankBranch: true,\n      provice: 'Western Cape'\n    },\n    {\n      placeName: 'Glenwood',\n      hasHospital: true,\n      hasPoliceStation: true,\n      hasBankBranch: true,\n      provice: 'Gauteng'\n    },\n    {\n      placeName: 'Clarewood',\n      hasHospital: true,\n      hasPoliceStation: true,\n      hasBankBranch: true,\n    },\n    {\n      placeName: 'Clarewood',\n      hasHospital: true,\n      hasPoliceStation: true,\n      hasBankBranch: true,\n    },\n    {\n      placeName: 'Clarewood',\n      hasHospital: true,\n      hasPoliceStation: true,\n      hasBankBranch: true,\n    }]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                }
+            ],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class MarketService\n{\n  markets = [\n    {\n      placeName: 'Clarewood',\n      hasHospital: true,\n      hasPoliceStation: true,\n      hasBankBranch: true,\n      provice: 'Western Cape'\n    },\n    {\n      placeName: 'Glenwood',\n      hasHospital: true,\n      hasPoliceStation: true,\n      hasBankBranch: true,\n      provice: 'Gauteng'\n    },\n    {\n      placeName: 'Clarewood',\n      hasHospital: true,\n      hasPoliceStation: true,\n      hasBankBranch: true,\n    },\n    {\n      placeName: 'Clarewood',\n      hasHospital: true,\n      hasPoliceStation: true,\n      hasBankBranch: true,\n    },\n    {\n      placeName: 'Clarewood',\n      hasHospital: true,\n      hasPoliceStation: true,\n      hasBankBranch: true,\n    }];\n\n  constructor() { }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 40
+            },
+            "extends": [],
+            "type": "injectable"
+        },
+        {
+            "name": "StockingService",
+            "id": "injectable-StockingService-82d1031504317fae7efe81874c00389b667a09748def21662c7e8f32b347569d008f642c7d370b4ddeb48b39d9d28d872b9344a626648ab5abda36642fd924ed",
+            "file": "src/app/services/stocking.service.ts",
+            "properties": [
+                {
+                    "name": "initialStockConfiguration",
+                    "defaultValue": "[\n    {\n      name: 'Weed',\n      initialPrice: 100,\n      initialStock: 200,\n      stockVolatility: 0.3,\n      priceVolatility: 0.09,\n      appearance: 0.9\n    },\n    {\n      name: 'Hashish',\n      initialPrice: 450,\n      initialStock: 100,\n      stockVolatility: 0.3,\n      priceVolatility: 0.12,\n      appearance: 0.9\n    },\n    {\n      name: 'Kool Aid',\n      initialPrice: 750,\n      initialStock: 100,\n      stockVolatility: 0.3,\n      priceVolatility: 0.05,\n      appearance: 0.8\n    },\n    {\n      name: 'Special K',\n      initialPrice: 50,\n      priceVolatility: 0.12,\n      appearance: 0.7,\n      initialStock: 200,\n      stockVolatility: 0.3,\n    },\n    {\n      name: 'Heroin',\n      initialPrice: 2000,\n      priceVolatility: 0.12,\n      appearance: 0.7,\n      initialStock: 200,\n      stockVolatility: 0.3,\n    },\n    {\n      name: 'Shrooms',\n      initialPrice: 50,\n      priceVolatility: 0.3,\n      appearance: 0.7,\n      initialStock: 500,\n      stockVolatility: 0.7,\n    },\n    {\n      name: 'Tracers',\n      initialPrice: 600,\n      priceVolatility: 0.6,\n      appearance: 0.6,\n      initialStock: 300,\n      stockVolatility: 0.3,\n    }\n  ]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 11
+                },
+                {
+                    "name": "utilityService",
+                    "defaultValue": "inject(UtilityService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 70
+                }
+            ],
+            "methods": [
+                {
+                    "name": "getMarket",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "{}",
+                    "typeParameters": [],
+                    "line": 72,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { inject, Injectable } from '@angular/core';\nimport { dopeStock } from '../models/dopeStock.model';\nimport { UtilityService } from './utility.service';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class StockingService\n{\n\n  initialStockConfiguration = [\n    {\n      name: 'Weed',\n      initialPrice: 100,\n      initialStock: 200,\n      stockVolatility: 0.3,\n      priceVolatility: 0.09,\n      appearance: 0.9\n    },\n    {\n      name: 'Hashish',\n      initialPrice: 450,\n      initialStock: 100,\n      stockVolatility: 0.3,\n      priceVolatility: 0.12,\n      appearance: 0.9\n    },\n    {\n      name: 'Kool Aid',\n      initialPrice: 750,\n      initialStock: 100,\n      stockVolatility: 0.3,\n      priceVolatility: 0.05,\n      appearance: 0.8\n    },\n    {\n      name: 'Special K',\n      initialPrice: 50,\n      priceVolatility: 0.12,\n      appearance: 0.7,\n      initialStock: 200,\n      stockVolatility: 0.3,\n    },\n    {\n      name: 'Heroin',\n      initialPrice: 2000,\n      priceVolatility: 0.12,\n      appearance: 0.7,\n      initialStock: 200,\n      stockVolatility: 0.3,\n    },\n    {\n      name: 'Shrooms',\n      initialPrice: 50,\n      priceVolatility: 0.3,\n      appearance: 0.7,\n      initialStock: 500,\n      stockVolatility: 0.7,\n    },\n    {\n      name: 'Tracers',\n      initialPrice: 600,\n      priceVolatility: 0.6,\n      appearance: 0.6,\n      initialStock: 300,\n      stockVolatility: 0.3,\n    }\n  ]\n\n  utilityService = inject(UtilityService);\n\n  getMarket()\n  {\n    let t: dopeStock[] = [];\n    this.initialStockConfiguration.forEach(x =>\n    {\n      if (this.utilityService.rollDice(x.appearance))\n      {\n        t.push({\n          name: x.name,\n          price: this.utilityService.getSwingNumber(x.initialPrice, x.priceVolatility) | 0,\n          count: this.utilityService.getSwingNumber(x.initialStock, x.stockVolatility) | 0\n        }\n        );\n      }\n    });\n    return t;\n  }\n\n\n  constructor() { }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 88
+            },
+            "extends": [],
+            "type": "injectable"
+        },
+        {
+            "name": "TasksState",
+            "id": "injectable-TasksState-1c97e7e5e9f3dfaf6a2d7f119ca4bcc06618d8b143ea0bac4daa8675e04c63c4e3b802e59941550139c78ac1678e0cf39e6f6d97fc68265b5becec6b1d506433",
+            "file": "src/app/state/task.state.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "archiveTask",
+                    "args": [
+                        {
+                            "type": "StateContext<TaskStateModel>",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "type": "ArchiveTask",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 94,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "Action",
+                            "stringifiedArguments": "ArchiveTask"
+                        }
+                    ],
+                    "modifierKind": [
+                        170
+                    ],
+                    "jsdoctags": [
+                        {
+                            "type": "StateContext<TaskStateModel>",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "type": "ArchiveTask",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getAllTasks",
+                    "args": [
+                        {
+                            "name": "state",
+                            "type": "TaskStateModel",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "Task[]",
+                    "typeParameters": [],
+                    "line": 62,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "Selector",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        170,
+                        126
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "state",
+                            "type": "TaskStateModel",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getError",
+                    "args": [
+                        {
+                            "name": "state",
+                            "type": "TaskStateModel",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 56,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "Selector",
+                            "stringifiedArguments": ""
+                        }
+                    ],
+                    "modifierKind": [
+                        170,
+                        126
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "state",
+                            "type": "TaskStateModel",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "pinTask",
+                    "args": [
+                        {
+                            "type": "StateContext<TaskStateModel>",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "type": "PinTask",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 69,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "decorators": [
+                        {
+                            "name": "Action",
+                            "stringifiedArguments": "PinTask"
+                        }
+                    ],
+                    "modifierKind": [
+                        170
+                    ],
+                    "jsdoctags": [
+                        {
+                            "type": "StateContext<TaskStateModel>",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "type": "PinTask",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { State, Selector, Action, StateContext } from '@ngxs/store';\nimport { patch, updateItem } from '@ngxs/store/operators';\nimport { Task } from '../models/task.model';\n\n// Defines the actions available to the app\nexport const actions = {\n    ARCHIVE_TASK: 'ARCHIVE_TASK',\n    PIN_TASK: 'PIN_TASK',\n};\n\nexport class ArchiveTask\n{\n    static readonly type = actions.ARCHIVE_TASK;\n\n    constructor(public payload: string) { }\n}\n\nexport class PinTask\n{\n    static readonly type = actions.PIN_TASK;\n\n    constructor(public payload: string) { }\n}\n\n// The initial state of our store when the app loads.\n// Usually you would fetch this from a server\nconst defaultTasks = [\n    { id: '1', title: 'Something', state: 'TASK_INBOX' },\n    { id: '2', title: 'Something more', state: 'TASK_INBOX' },\n    { id: '3', title: 'Something else', state: 'TASK_INBOX' },\n    { id: '4', title: 'Something again', state: 'TASK_INBOX' },\n];\n\nexport interface TaskStateModel\n{\n    tasks: Task[];\n    status: 'idle' | 'loading' | 'success' | 'error';\n    error: boolean;\n}\n\n// Sets the default state\n@State<TaskStateModel>({\n    name: 'taskbox',\n    defaults: {\n        tasks: defaultTasks,\n        status: 'idle',\n        error: false,\n    },\n})\n@Injectable()\nexport class TasksState\n{\n    // Defines a new selector for the error field\n    @Selector()\n    static getError(state: TaskStateModel): boolean\n    {\n        return state.error;\n    }\n\n    @Selector()\n    static getAllTasks(state: TaskStateModel): Task[]\n    {\n        return state.tasks;\n    }\n\n    // Triggers the PinTask action, similar to redux\n    @Action(PinTask)\n    pinTask(\n        { getState, setState }: StateContext<TaskStateModel>,\n        { payload }: PinTask\n    )\n    {\n        const task = getState().tasks.find((task) => task.id === payload);\n\n        if (task)\n        {\n            const updatedTask: Task = {\n                ...task,\n                state: 'TASK_PINNED',\n            };\n            setState(\n                patch({\n                    tasks: updateItem<Task>(\n                        (pinnedTask) => pinnedTask?.id === payload,\n                        updatedTask\n                    ),\n                })\n            );\n        }\n    }\n    // Triggers the archiveTask action, similar to redux\n    @Action(ArchiveTask)\n    archiveTask(\n        { getState, setState }: StateContext<TaskStateModel>,\n        { payload }: ArchiveTask\n    )\n    {\n        const task = getState().tasks.find((task) => task.id === payload);\n        if (task)\n        {\n            const updatedTask: Task = {\n                ...task,\n                state: 'TASK_ARCHIVED',\n            };\n            setState(\n                patch({\n                    tasks: updateItem<Task>(\n                        (archivedTask) => archivedTask?.id === payload,\n                        updatedTask\n                    ),\n                })\n            );\n        }\n    }\n}\n\n",
+            "extends": [],
+            "type": "injectable"
+        },
+        {
+            "name": "TradingService",
+            "id": "injectable-TradingService-f5a69c82990c860238fab703043c16640575b67e3a3985c81ca43757f9f243e2af0299502e847a2fa3b7759542d8a86ad929f8dd22ba6f3f5f7716a60de51e51",
+            "file": "src/app/services/trading.service.ts",
+            "properties": [
+                {
+                    "name": "availableStock",
+                    "defaultValue": "signal<dopeStock[]>(this.stockingService.getMarket())",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 16
+                },
+                {
+                    "name": "clock",
+                    "defaultValue": "signal(1)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "errorMessage",
+                    "defaultValue": "signal<string>('')",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "stockingService",
+                    "defaultValue": "inject(StockingService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                },
+                {
+                    "name": "tradingSheet",
+                    "defaultValue": "signal<dopeStat>({ cash: 1200, day: this.clock(), debt: -1200, stokvel: 0 })",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "trenchCoatStock",
+                    "defaultValue": "signal<dopeTrenchStockItem[]>([])",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methods": [
+                {
+                    "name": "advanceClock",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 23,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "getStockPrice",
+                    "args": [
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 33,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "name",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "placeBuyOrder",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "itemTransactedEvent",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 72,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "itemTransactedEvent",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "placeSellOrder",
+                    "args": [
+                        {
+                            "name": "event",
+                            "type": "itemTransactedEvent",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 38,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "event",
+                            "type": "itemTransactedEvent",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { inject, Injectable, signal } from '@angular/core';\nimport { dopeStock } from '../models/dopeStock.model';\nimport { dopeStat } from '../models/dopeStat.model';\nimport { dopeTrenchStockItem } from '../models/dopeTrenchStockItem.model';\nimport { StockingService } from './stocking.service';\nimport { itemTransactedEvent } from '../models/itemTransactedEvent';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class TradingService\n{\n  stockingService = inject(StockingService);\n\n  constructor() { }\n  availableStock = signal<dopeStock[]>(this.stockingService.getMarket());\n  clock = signal(1);\n  tradingSheet = signal<dopeStat>({ cash: 1200, day: this.clock(), debt: -1200, stokvel: 0 });\n  trenchCoatStock = signal<dopeTrenchStockItem[]>([]);\n\n  errorMessage = signal<string>('');\n\n  advanceClock()\n  {\n    this.clock.update(x => x + 1);\n    //charge interest on the debt\n    let t = this.tradingSheet();\n    t.debt *= 1.20;\n    t.debt = t.debt | 0;\n    this.tradingSheet.set(t);\n  }\n\n  getStockPrice(name: string)\n  {\n    return this.availableStock().find(x => x.name === name)?.price;\n  }\n\n  placeSellOrder(event: itemTransactedEvent)\n  {\n    console.log('tradingService placed sale!');\n    if (event.quantity > 0)\n    {\n      console.log('processing the selling part! ', event)\n      const moneyEarned = event.price || 0 * event.quantity;\n      //decrease the suitcase stock\n      //increase the balance\n\n      let p = this.tradingSheet();\n      p!.cash += moneyEarned;\n      this.tradingSheet.update(x => p);\n      //update player stock\n      let st: dopeTrenchStockItem[] = [];\n      st = this.trenchCoatStock();\n      let f = st.find(x => x.name == event.name);\n      if (f)\n      {\n        f.quantity -= event.quantity;\n      }\n      else\n      {\n        st.push({ name: event.name, quantity: event.quantity });\n      }\n      this.trenchCoatStock.set(st);\n    }\n    else\n    {\n      console.log('0 items cannot be sold.');\n    }\n  }\n\n\n  placeBuyOrder(event: itemTransactedEvent)\n  {\n    console.log(event);\n    let moneyRequiredForPurchase = (event.price ?? Infinity) * event.quantity;\n    if (moneyRequiredForPurchase <= this.tradingSheet()!.cash)\n    {\n      //update player balance\n      let p = this.tradingSheet();\n      p!.cash -= moneyRequiredForPurchase;\n      console.log(p);\n      this.tradingSheet.update(x => p);\n      //update player stock\n      let st: dopeTrenchStockItem[] = [];\n      st = this.trenchCoatStock();\n      let f = st.find(x => x.name == event.name);\n\n      if (f)\n      {\n        f.quantity += event.quantity;\n      }\n      else\n      {\n        st.push({ name: event.name, quantity: event.quantity });\n      }\n      this.trenchCoatStock.set(st);\n      //update stock for this city\n      let sg: dopeStock[] = [];\n      sg = this.availableStock();\n      let r = sg.find(x => x.name == event.name);\n\n      if (r)\n      {\n        r.count -= event.quantity;\n      }\n      this.availableStock.set(sg);\n    }\n    else\n    {\n      this.errorMessage.set('Could not place order!');\n    }\n  }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 13
+            },
+            "extends": [],
+            "type": "injectable"
+        },
+        {
+            "name": "UtilityService",
+            "id": "injectable-UtilityService-92d4101ac98f2824da8fdb228cd0a065088b3c150f5126f952982a8667d1d54a42fab0c7a20d28ed782711615444e4132255f0d7dff2e989e1b0640939bc8806",
+            "file": "src/app/services/utility.service.ts",
+            "properties": [],
+            "methods": [
+                {
+                    "name": "clamp",
+                    "args": [
+                        {
+                            "name": "num",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "lower",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "upper",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "num",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "lower",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "upper",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getNewPrice",
+                    "args": [
+                        {
+                            "name": "existingPrice",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "volatility",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "existingPrice",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "volatility",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "getSwingNumber",
+                    "args": [
+                        {
+                            "name": "central",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "deviation",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "number",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "central",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "deviation",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "rollDice",
+                    "args": [
+                        {
+                            "name": "probability",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 26,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "probability",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class UtilityService\n{\n  \n  constructor() { }\n\n  getNewPrice(existingPrice: number, volatility: number)\n  {\n    return (1.0 + volatility) * existingPrice;\n  }\n\n  getSwingNumber(central: number, deviation: number)\n  {\n    return central + central * (this.rollDice(0.5) ? 1 : -1) * (1 + Math.random()) * deviation;\n  }\n\n  clamp(num: number, lower: number, upper: number)\n  {\n    return Math.min(Math.max(num, lower), upper);\n  }\n\n  rollDice(probability: number)\n  {\n    return Math.random() <= probability;\n  }\n\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 7
+            },
+            "extends": [],
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [
+        {
+            "name": "ArchiveTask",
+            "id": "class-ArchiveTask-1c97e7e5e9f3dfaf6a2d7f119ca4bcc06618d8b143ea0bac4daa8675e04c63c4e3b802e59941550139c78ac1678e0cf39e6f6d97fc68265b5becec6b1d506433",
+            "file": "src/app/state/task.state.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { State, Selector, Action, StateContext } from '@ngxs/store';\nimport { patch, updateItem } from '@ngxs/store/operators';\nimport { Task } from '../models/task.model';\n\n// Defines the actions available to the app\nexport const actions = {\n    ARCHIVE_TASK: 'ARCHIVE_TASK',\n    PIN_TASK: 'PIN_TASK',\n};\n\nexport class ArchiveTask\n{\n    static readonly type = actions.ARCHIVE_TASK;\n\n    constructor(public payload: string) { }\n}\n\nexport class PinTask\n{\n    static readonly type = actions.PIN_TASK;\n\n    constructor(public payload: string) { }\n}\n\n// The initial state of our store when the app loads.\n// Usually you would fetch this from a server\nconst defaultTasks = [\n    { id: '1', title: 'Something', state: 'TASK_INBOX' },\n    { id: '2', title: 'Something more', state: 'TASK_INBOX' },\n    { id: '3', title: 'Something else', state: 'TASK_INBOX' },\n    { id: '4', title: 'Something again', state: 'TASK_INBOX' },\n];\n\nexport interface TaskStateModel\n{\n    tasks: Task[];\n    status: 'idle' | 'loading' | 'success' | 'error';\n    error: boolean;\n}\n\n// Sets the default state\n@State<TaskStateModel>({\n    name: 'taskbox',\n    defaults: {\n        tasks: defaultTasks,\n        status: 'idle',\n        error: false,\n    },\n})\n@Injectable()\nexport class TasksState\n{\n    // Defines a new selector for the error field\n    @Selector()\n    static getError(state: TaskStateModel): boolean\n    {\n        return state.error;\n    }\n\n    @Selector()\n    static getAllTasks(state: TaskStateModel): Task[]\n    {\n        return state.tasks;\n    }\n\n    // Triggers the PinTask action, similar to redux\n    @Action(PinTask)\n    pinTask(\n        { getState, setState }: StateContext<TaskStateModel>,\n        { payload }: PinTask\n    )\n    {\n        const task = getState().tasks.find((task) => task.id === payload);\n\n        if (task)\n        {\n            const updatedTask: Task = {\n                ...task,\n                state: 'TASK_PINNED',\n            };\n            setState(\n                patch({\n                    tasks: updateItem<Task>(\n                        (pinnedTask) => pinnedTask?.id === payload,\n                        updatedTask\n                    ),\n                })\n            );\n        }\n    }\n    // Triggers the archiveTask action, similar to redux\n    @Action(ArchiveTask)\n    archiveTask(\n        { getState, setState }: StateContext<TaskStateModel>,\n        { payload }: ArchiveTask\n    )\n    {\n        const task = getState().tasks.find((task) => task.id === payload);\n        if (task)\n        {\n            const updatedTask: Task = {\n                ...task,\n                state: 'TASK_ARCHIVED',\n            };\n            setState(\n                patch({\n                    tasks: updateItem<Task>(\n                        (archivedTask) => archivedTask?.id === payload,\n                        updatedTask\n                    ),\n                })\n            );\n        }\n    }\n}\n\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "payload",
+                        "type": "string",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 14,
+                "jsdoctags": [
+                    {
+                        "name": "payload",
+                        "type": "string",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [
+                {
+                    "name": "payload",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 16,
+                    "modifierKind": [
+                        125
+                    ]
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "actions.ARCHIVE_TASK",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14,
+                    "modifierKind": [
+                        126,
+                        148
+                    ]
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": []
+        },
+        {
+            "name": "PinTask",
+            "id": "class-PinTask-1c97e7e5e9f3dfaf6a2d7f119ca4bcc06618d8b143ea0bac4daa8675e04c63c4e3b802e59941550139c78ac1678e0cf39e6f6d97fc68265b5becec6b1d506433",
+            "file": "src/app/state/task.state.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "class",
+            "sourceCode": "import { Injectable } from '@angular/core';\nimport { State, Selector, Action, StateContext } from '@ngxs/store';\nimport { patch, updateItem } from '@ngxs/store/operators';\nimport { Task } from '../models/task.model';\n\n// Defines the actions available to the app\nexport const actions = {\n    ARCHIVE_TASK: 'ARCHIVE_TASK',\n    PIN_TASK: 'PIN_TASK',\n};\n\nexport class ArchiveTask\n{\n    static readonly type = actions.ARCHIVE_TASK;\n\n    constructor(public payload: string) { }\n}\n\nexport class PinTask\n{\n    static readonly type = actions.PIN_TASK;\n\n    constructor(public payload: string) { }\n}\n\n// The initial state of our store when the app loads.\n// Usually you would fetch this from a server\nconst defaultTasks = [\n    { id: '1', title: 'Something', state: 'TASK_INBOX' },\n    { id: '2', title: 'Something more', state: 'TASK_INBOX' },\n    { id: '3', title: 'Something else', state: 'TASK_INBOX' },\n    { id: '4', title: 'Something again', state: 'TASK_INBOX' },\n];\n\nexport interface TaskStateModel\n{\n    tasks: Task[];\n    status: 'idle' | 'loading' | 'success' | 'error';\n    error: boolean;\n}\n\n// Sets the default state\n@State<TaskStateModel>({\n    name: 'taskbox',\n    defaults: {\n        tasks: defaultTasks,\n        status: 'idle',\n        error: false,\n    },\n})\n@Injectable()\nexport class TasksState\n{\n    // Defines a new selector for the error field\n    @Selector()\n    static getError(state: TaskStateModel): boolean\n    {\n        return state.error;\n    }\n\n    @Selector()\n    static getAllTasks(state: TaskStateModel): Task[]\n    {\n        return state.tasks;\n    }\n\n    // Triggers the PinTask action, similar to redux\n    @Action(PinTask)\n    pinTask(\n        { getState, setState }: StateContext<TaskStateModel>,\n        { payload }: PinTask\n    )\n    {\n        const task = getState().tasks.find((task) => task.id === payload);\n\n        if (task)\n        {\n            const updatedTask: Task = {\n                ...task,\n                state: 'TASK_PINNED',\n            };\n            setState(\n                patch({\n                    tasks: updateItem<Task>(\n                        (pinnedTask) => pinnedTask?.id === payload,\n                        updatedTask\n                    ),\n                })\n            );\n        }\n    }\n    // Triggers the archiveTask action, similar to redux\n    @Action(ArchiveTask)\n    archiveTask(\n        { getState, setState }: StateContext<TaskStateModel>,\n        { payload }: ArchiveTask\n    )\n    {\n        const task = getState().tasks.find((task) => task.id === payload);\n        if (task)\n        {\n            const updatedTask: Task = {\n                ...task,\n                state: 'TASK_ARCHIVED',\n            };\n            setState(\n                patch({\n                    tasks: updateItem<Task>(\n                        (archivedTask) => archivedTask?.id === payload,\n                        updatedTask\n                    ),\n                })\n            );\n        }\n    }\n}\n\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "payload",
+                        "type": "string",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 21,
+                "jsdoctags": [
+                    {
+                        "name": "payload",
+                        "type": "string",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "inputsClass": [],
+            "outputsClass": [],
+            "properties": [
+                {
+                    "name": "payload",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 23,
+                    "modifierKind": [
+                        125
+                    ]
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "actions.PIN_TASK",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21,
+                    "modifierKind": [
+                        126,
+                        148
+                    ]
+                }
+            ],
+            "methods": [],
+            "indexSignatures": [],
+            "extends": [],
+            "hostBindings": [],
+            "hostListeners": []
+        }
+    ],
+    "directives": [],
+    "components": [
+        {
+            "name": "AppComponent",
+            "id": "component-AppComponent-ccce4ecfded140c1fea6fd59fdc42f8c57f4d492ad2f9d5bcd810d291690ce4505a8e9c18a16d9371cb84a156536673c8831e3755a97c3ea4d82c76b3bd71c30",
+            "file": "src/app/app.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-root",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./app.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "hambugerButton",
+                    "defaultValue": "ElementRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 19,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'hambugerButton'"
+                        }
+                    ],
+                    "modifierKind": [
+                        170
+                    ]
+                },
+                {
+                    "name": "hideMenu",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "'tailpdf'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngAfterViewInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 21,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "toggleMenu",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 26,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "RouterOutlet"
+                },
+                {
+                    "name": "NavbarComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "RouterModule",
+                    "type": "module"
+                },
+                {
+                    "name": "LoginComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "ExpanderComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';\nimport { RouterModule, RouterOutlet } from '@angular/router';\nimport { NavbarComponent } from \"./components/navbar/navbar.component\";\nimport { CommonModule } from '@angular/common';\nimport { LoginComponent } from \"./components/login/login.component\";\nimport { ExpanderComponent } from \"./components/expander/expander.component\";\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [CommonModule, RouterOutlet, NavbarComponent, CommonModule, RouterModule, LoginComponent, ExpanderComponent],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.css'\n})\nexport class AppComponent implements AfterViewInit\n{\n  title = 'tailpdf';\n  hideMenu = true;\n  @ViewChild('hambugerButton') hambugerButton = ElementRef;\n\n  ngAfterViewInit(): void\n  {\n\n  }\n\n  toggleMenu()\n  {\n    this.hideMenu = !this.hideMenu;\n  }\n\n}\n",
+            "styleUrl": "./app.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "AfterViewInit"
+            ],
+            "templateData": "<div>\n  <app-navbar></app-navbar>\n</div>\n<div class=\"flex mx-auto min-h-screen justify-center\">\n  <router-outlet></router-outlet>  \n</div>\n\n\n\n\n\n"
+        },
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-d7bf0323e6da130e2609e2af0117b4a8d7cd874132206af50bf43dfc37044485fe50f2867ea76525730dd195b9b95a43802a12dadc6ad5cd7bf2faa07f19f0da",
+            "file": "src/stories/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
+            ],
+            "styles": [],
+            "template": " <button  type=\"button\"\n  (click)=\"onClick.emit($event)\"\n  [ngClass]=\"classes\"\n  [ngStyle]=\"{ 'background-color': backgroundColor }\"\n>\n  {{ label }}\n</button>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nWhat background color to use",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 25,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 760,
+                            "end": 773,
+                            "flags": 16842752,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 334,
+                            "tagName": {
+                                "pos": 761,
+                                "end": 769,
+                                "flags": 16842752,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 80,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 37,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nIs this the principal call to action on the page?",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 21,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nHow large should the button be?",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 29,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nOptional click handler",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 41,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  standalone: true,\n  imports: [CommonModule],\n  template: ` <button\n  type=\"button\"\n  (click)=\"onClick.emit($event)\"\n  [ngClass]=\"classes\"\n  [ngStyle]=\"{ 'background-color': backgroundColor }\"\n>\n  {{ label }}\n</button>`,\n  styleUrls: ['./button.css'],\n})\nexport class ButtonComponent {\n  /** Is this the principal call to action on the page? */\n  @Input()\n  primary = false;\n\n  /** What background color to use */\n  @Input()\n  backgroundColor?: string;\n\n  /** How large should the button be? */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /** Optional click handler */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  display: inline-block;\n  cursor: pointer;\n  border: 0;\n  border-radius: 3em;\n  font-weight: 700;\n  line-height: 1;\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n}\n.storybook-button--primary {\n  background-color: #1ea7fd;\n  color: white;\n}\n.storybook-button--secondary {\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n  background-color: transparent;\n  color: #333;\n}\n.storybook-button--small {\n  padding: 10px 16px;\n  font-size: 12px;\n}\n.storybook-button--medium {\n  padding: 11px 20px;\n  font-size: 14px;\n}\n.storybook-button--large {\n  padding: 12px 24px;\n  font-size: 16px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": [],
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 43
+                    }
+                }
+            }
+        },
+        {
+            "name": "CardComponent",
+            "id": "component-CardComponent-a1c6c54d1725bec30d3914ec2d9ba6db96f38634d4357f258a7bc7d786635e05a7da27d1c7633dea7fbde79d0dc958f96470d5593e9915e56b54a7376d1c43bf",
+            "file": "src/app/components/card/card.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-card",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./card.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-card',\n  standalone: true,\n  imports: [],\n  templateUrl: './card.component.html',\n  styleUrl: './card.component.css'\n})\nexport class CardComponent {\n\n}\n",
+            "styleUrl": "./card.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div>\n    <div class=\"header\"></div>\n    <div class=\"content\"></div>\n    <div class=\"footer\"></div>\n</div>"
+        },
+        {
+            "name": "DocumentsComponent",
+            "id": "component-DocumentsComponent-f2b566ab59dfc7533e1264e68752f82f749210ab9b60f365457fc86aac564d4b76486508c0f3b69b241deb8506d4f0b8debeaa2a7b4cc8c98f543937203544e3",
+            "file": "src/app/components/documents/documents.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-documents",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./documents.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "ExpanderComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { ExpanderComponent } from \"../expander/expander.component\";\n\n@Component({\n  selector: 'app-documents',\n  standalone: true,\n  imports: [ExpanderComponent],\n  templateUrl: './documents.component.html',\n  styleUrl: './documents.component.css'\n})\nexport class DocumentsComponent {\n\n}\n",
+            "styleUrl": "./documents.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"max-h-5xl min-w-80 grid md:grid-cols-2 gap-10 bg-orange-400 \">\n    <div class=\"bg-zinc-400 border-dotted border-red-700 h\">\n        <app-expander caption=\"Expand me\">this is my hidden text</app-expander>\n    </div>\n    <div class=\"bg-zinc-400\">02</div>\n</div>"
+        },
+        {
+            "name": "DopeplayComponent",
+            "id": "component-DopeplayComponent-88abbc98127f23695f0242a9ca31fde09ad1c727798db182dae2e689f85292c527151d00358e22706ba77c13d7c0069a8d32b4772ae07ee4729d93b5153d502f",
+            "file": "src/app/components/dopeplay/dopeplay.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-dopeplay",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./dopeplay.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "errorMessage",
+                    "defaultValue": "this.tradingService.errorMessage()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "moveDisabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "stockingService",
+                    "defaultValue": "inject(StockingService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "tradingService",
+                    "defaultValue": "inject(TradingService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "move",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 40,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "processPurchase",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "itemTransactedEvent",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "itemTransactedEvent",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "processSale",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "itemTransactedEvent",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 30,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "itemTransactedEvent",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "DopeStatsComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "DopestocksComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "DopetrenchcoatComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "MapComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, inject, Input } from '@angular/core';\nimport { DopeStatsComponent } from \"../dopestats/dopestats.component\";\nimport { DopestocksComponent } from \"../dopestocks/dopestocks.component\";\n\nimport { DopetrenchcoatComponent } from \"../dopetrenchcoat/dopetrenchcoat.component\";\nimport { TradingService } from '../../services/trading.service';\nimport { StockingService } from '../../services/stocking.service';\nimport { itemTransactedEvent } from '../../models/itemTransactedEvent';\nimport { MapComponent } from \"../map/map.component\";\n\n@Component({\n  selector: 'app-dopeplay',\n  standalone: true,\n  imports: [DopeStatsComponent, DopestocksComponent, DopetrenchcoatComponent, MapComponent],\n  templateUrl: './dopeplay.component.html',\n  styleUrl: './dopeplay.component.css'\n})\nexport class DopeplayComponent\n{\n  moveDisabled = false;\n  tradingService = inject(TradingService)\n  stockingService = inject(StockingService);\n  errorMessage = this.tradingService.errorMessage();\n\n  processPurchase($event: itemTransactedEvent)\n  {\n    this.tradingService.placeBuyOrder($event);\n  }\n\n  processSale($event: itemTransactedEvent)\n  {\n    console.log(this.tradingService.getStockPrice($event.name));\n    console.log('quantity to sell ', $event.quantity);\n    console.log('item to sell ', $event.name);\n    this.tradingService.placeSellOrder($event);\n  }\n\n\n\n  move()\n  {\n    this.tradingService.advanceClock();\n    this.tradingService.availableStock.set(this.stockingService.getMarket())\n  }\n\n}\n",
+            "styleUrl": "./dopeplay.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "\n\n<app-dopestats></app-dopestats>\n<app-dopestocks (emitItemPurchased)=\"processPurchase($event)\"></app-dopestocks>\n<app-dopetrenchcoat (emitItemSold)=\"processSale($event)\" ></app-dopetrenchcoat>\n<app-map></app-map>\n<button class=\"btn btn-primary active:text-2xl\" (click)=\"move()\">Move</button>\n\n{{errorMessage}}"
+        },
+        {
+            "name": "DopeStatsComponent",
+            "id": "component-DopeStatsComponent-c246303015b0ce1600dc1385ad6e922ed76dab34b31635be2438198c1ac71c9f6409a1373423d184d0afff68dd9f9d991f2358a2e4ff1478c52a2dc6e4c0e7a1",
+            "file": "src/app/components/dopestats/dopestats.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-dopestats",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./dopestats.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "dopeStat",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "dopeStat | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 17
+                },
+                {
+                    "name": "tradingService",
+                    "defaultValue": "inject(TradingService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 19,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "ExpanderComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, inject, Inject, Input, OnInit } from '@angular/core';\nimport { dopeStat } from '../../models/dopeStat.model';\nimport { TradingService } from '../../services/trading.service';\nimport { ExpanderComponent } from \"../expander/expander.component\";\n\n@Component({\n  selector: 'app-dopestats',\n  standalone: true,\n  imports: [ExpanderComponent],\n  templateUrl: './dopestats.component.html',\n  styleUrl: './dopestats.component.css'\n})\nexport class DopeStatsComponent implements OnInit\n{\n  tradingService = inject(TradingService);\n\n  dopeStat!: dopeStat|null;\n\n  ngOnInit(): void\n  {\n    \n    this.dopeStat = this.tradingService.tradingSheet();\n  }\n  \n  \n\n}\n",
+            "styleUrl": "./dopestats.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "implements": [
+                "OnInit"
+            ],
+            "templateData": "<div class=\"text-2xl mt-3\">Progress</div>\n<div class=\"card w-40\">\n    <div class=\"text-white grid grid-rows-1 grid-flow-col\">\n        <div class=\"ml-1.5\">Day</div>\n        <div class=\"text-end\">{{tradingService.clock()}}</div>\n    </div>\n    <hr>    \n    <div class=\"grid grid-rows-1 grid-flow-col\">\n        <div class=\"ml-1.5\">Cash</div>\n        <div class=\"text-end\">{{dopeStat!.cash}}</div>\n    </div>\n    <div class=\"grid grid-rows-1 grid-flow-col\">\n        <div class=\"ml-1.5\">Debt</div>\n        <div class=\"text-end\">{{dopeStat!.debt}}</div>\n    </div>\n    \n    <div class=\"grid grid-rows-1 grid-flow-col\">\n        <div class=\"ml-1.5\">Stokvel</div>\n        <div class=\"text-end\">{{dopeStat!.stokvel}}</div>\n    </div>\n    <div>\n        <div class=\"ml-1.5\">Upcoming debit orders</div>\n        <div class=\"text-end\"><app-expander caption=\"Accounts\" >accounts</app-expander></div>\n    </div>\n</div>"
+        },
+        {
+            "name": "DopestocksComponent",
+            "id": "component-DopestocksComponent-2def4c14bc052b7fc74d3cdef5a7559a361d1bbec8fd3b71c1a3255261c6e1fc07bf601938db2fa5d164cd90d7d3203bfffa1592cd9831d30234f6360aaab354",
+            "file": "src/app/components/dopestocks/dopestocks.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-dopestocks",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./dopestocks.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "emitItemPurchased",
+                    "defaultValue": "new EventEmitter<itemTransactedEvent>",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 33,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "basketAvailable",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "basketCount",
+                    "defaultValue": "1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 24
+                },
+                {
+                    "name": "basketItemName",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "basketItemPrice",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "hidden",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 35
+                },
+                {
+                    "name": "options",
+                    "defaultValue": "{\n    floor: 0,\n    ceil: 100,\n    step: 1\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Options",
+                    "optional": false,
+                    "description": "",
+                    "line": 25
+                },
+                {
+                    "name": "tradingService",
+                    "defaultValue": "inject(TradingService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                },
+                {
+                    "name": "utilityService",
+                    "defaultValue": "inject(UtilityService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "buyClicked",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 51,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "cancelClicked",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 37,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "showPurchaseFor",
+                    "args": [
+                        {
+                            "name": "basketItemName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "basketAvailable",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "basketItemPrice",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "basketItemName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "basketAvailable",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "basketItemPrice",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "NgxSliderModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, inject, Input, Output } from '@angular/core';\nimport { dopeStock } from '../../models/dopeStock.model';\nimport { CommonModule } from '@angular/common';\nimport { TradingService } from '../../services/trading.service';\nimport { NgxSliderModule, Options } from '@angular-slider/ngx-slider';\nimport { UtilityService } from '../../services/utility.service';\nimport { itemTransactedEvent } from '../../models/itemTransactedEvent';\n\n@Component({\n  selector: 'app-dopestocks',\n  standalone: true,\n  imports: [CommonModule, NgxSliderModule],\n  templateUrl: './dopestocks.component.html',\n  styleUrl: './dopestocks.component.css'\n})\nexport class DopestocksComponent\n{\n  tradingService = inject(TradingService);\n  utilityService = inject(UtilityService);\n\n  basketItemName!: string;\n  basketAvailable!: number;\n  basketItemPrice!: number;\n  basketCount = 1;\n  options: Options = {\n    floor: 0,\n    ceil: 100,\n    step: 1\n  }\n\n\n  @Output()\n  emitItemPurchased = new EventEmitter<itemTransactedEvent>;\n\n  hidden = true;\n\n  cancelClicked()\n  {\n    this.hidden = true;\n  }\n\n  showPurchaseFor(basketItemName: string, basketAvailable: number, basketItemPrice: number)\n  {    \n    this.basketItemName = basketItemName;\n    this.options = { ...this.options, ceil: this.utilityService.clamp((this.tradingService.tradingSheet()?.cash || 0) / basketItemPrice, 0, basketAvailable) | 0 };\n    this.basketAvailable = basketAvailable;\n    this.basketItemPrice = basketItemPrice;\n    this.hidden = false;\n  }\n\n  buyClicked()\n  {    \n    this.emitItemPurchased.emit({ name: this.basketItemName, price: this.basketItemPrice, quantity: this.basketCount })\n    this.hidden = true;\n  }\n}\n",
+            "styleUrl": "./dopestocks.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"text-2xl mt-3\">The market today</div>\n<div class=\"card \">\n    <div class=\"text-white grid grid-cols-4 border-white\">\n        <div class=\"ml-2 w-20\">Name</div>\n        <div class=\"w-60 ml-2 text-end\">Available</div>\n        <div class=\"text-end\">Price</div>\n        <div class=\"text-end\">Buy</div>        \n    </div>    \n    <div *ngFor=\"let s of tradingService.availableStock()\" class=\"grid grid-cols-4 bg-slate-400\">            \n            <div class=\"ml-2 w-20\">{{s.name}}</div>\n            <div class=\"text-end\">{{s.count}}</div>  \n            <div class=\"text-end\">R {{s.price}}</div>          \n            <div class=\"grid justify-items-end\">\n                <svg xmlns=\"http://www.w3.org/2000/svg\" \n                viewBox=\"0 0 24 24\" \n                fill=\"currentColor\" \n                (click)=\"showPurchaseFor(s.name, s.count, s.price)\"\n                class=\"cursor-pointer size-5\">\n                        <path fill-rule=\"evenodd\" d=\"M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z\" clip-rule=\"evenodd\" />\n                </svg>\n            </div>\n        </div>    \n</div>\n\n<div *ngIf=\"!hidden\" class=\"fixed inset-0 z-40 min-h-full overflow-y-auto overflow-x-hidden transition flex items-center\">\n    <!-- overlay -->\n    <div aria-hidden=\"true\" class=\"fixed inset-0 w-full h-full bg-black/50 cursor-pointer\">\n    </div>\n\n    <!-- Modal -->\n    <div class=\"relative w-full cursor-pointer pointer-events-none transition my-auto p-4\">\n        <div\n            class=\"w-full py-2 bg-white cursor-default pointer-events-auto dark:bg-gray-800 relative rounded-xl mx-auto max-w-sm\">\n\n            <button (click)=\"cancelClicked()\" tabindex=\"-1\" type=\"button\" class=\"absolute top-2 right-2 rtl:right-auto rtl:left-2\">\n                <svg title=\"Close\" tabindex=\"-1\" class=\"h-4 w-4 cursor-pointer text-gray-400\"\n                    xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">\n                    <path fill-rule=\"evenodd\"\n                        d=\"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\"\n                        clip-rule=\"evenodd\"></path>\n                </svg>\n                <span class=\"sr-only\" (click)=\"cancelClicked()\">\n                    Close\n                </span>\n            </button>\n\n\n\n            <div class=\"space-y-2 p-2\">\n                <div class=\"p-4 space-y-2 text-center dark:text-white\">\n                    <h2 class=\"text-xl font-bold tracking-tight\" id=\"page-action.heading\">\n                        How many {{this.basketItemName}} do you want to buy?\n                    </h2>\n                    <div class=\"grid grid-cols-1\">                        \n                        <div class=\"p-2\"><ngx-slider [options]=\"this.options\" [(value)]=\"this.basketCount\"></ngx-slider></div>\n                    </div>                    \n                </div>\n            </div>\n\n            <div class=\"space-y-2\">\n                <div aria-hidden=\"true\" class=\"border-t dark:border-gray-700 px-2\"></div>\n\n                <div class=\"px-6 py-2\">\n                    <div class=\"grid gap-2 grid-cols-[repeat(auto-fit,minmax(0,1fr))]\">\n                        <button type=\"button\" (click)=\"cancelClicked()\"\n                                class=\"inline-flex items-center justify-center py-1 gap-1 font-medium rounded-lg border transition-colors outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset dark:focus:ring-offset-0 min-h-[2.25rem] px-4 text-sm text-gray-800 bg-white border-gray-300 hover:bg-gray-50 focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-600 dark:hover:border-gray-500 dark:text-gray-200 dark:focus:text-primary-400 dark:focus:border-primary-400 dark:focus:bg-gray-800\">\n                                <span class=\"flex items-center gap-1\">\n                                    <span class=\"cursor-pointer\">\n                                        Cancel\n                                    </span>\n                                </span>\n                            </button>\n\n                        <button type=\"submit\" (click)=\"buyClicked()\"\n                                class=\"inline-flex items-center justify-center py-1 gap-1 font-medium rounded-lg border transition-colors outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset dark:focus:ring-offset-0 min-h-[2.25rem] px-4 text-sm text-white shadow focus:ring-white border-transparent bg-red-600 hover:bg-red-500 focus:bg-red-700 focus:ring-offset-red-700\">                        \n                                    <span class=\"cursor-pointer\">\n                                        Buy\n                                    </span>                        \n                            </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n"
+        },
+        {
+            "name": "DopetrenchcoatComponent",
+            "id": "component-DopetrenchcoatComponent-294ea00511441bf939831a50de61e4e74c62b3709693ae3722a74a1c8c9d442261f1d1251f297809dc1b19ed3b59595054487ee9e5dfe4b8a24225062592a056",
+            "file": "src/app/components/dopetrenchcoat/dopetrenchcoat.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-dopetrenchcoat",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./dopetrenchcoat.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "emitItemSold",
+                    "defaultValue": "new EventEmitter<itemTransactedEvent>",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 33,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "basketCount",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 21
+                },
+                {
+                    "name": "basketItemName",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "basketPrice",
+                    "defaultValue": "0",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 22
+                },
+                {
+                    "name": "hidden",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 19
+                },
+                {
+                    "name": "options",
+                    "defaultValue": "{\n    floor: 0,\n    ceil: 100,\n    step: 1\n  }",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Options",
+                    "optional": false,
+                    "description": "",
+                    "line": 23
+                },
+                {
+                    "name": "tradingService",
+                    "defaultValue": "inject(TradingService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "utilityService",
+                    "defaultValue": "inject(UtilityService)",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "cancelClicked",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 39,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "placeSaleOrder",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "itemTransactedEvent",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 35,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "itemTransactedEvent",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "sellClicked",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 43,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "showSellFor",
+                    "args": [
+                        {
+                            "name": "basketItemName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "basketCount",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 48,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "basketItemName",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "basketCount",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "NgxSliderModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, inject, Output } from '@angular/core';\nimport { dopeTrenchStockItem } from '../../models/dopeTrenchStockItem.model';\nimport { TradingService } from '../../services/trading.service';\nimport { CommonModule } from '@angular/common';\nimport { itemTransactedEvent } from '../../models/itemTransactedEvent';\nimport { NgxSliderModule, Options } from '@angular-slider/ngx-slider';\nimport { UtilityService } from '../../services/utility.service';\n\n\n@Component({\n  selector: 'app-dopetrenchcoat',\n  standalone: true,\n  imports: [CommonModule, NgxSliderModule],\n  templateUrl: './dopetrenchcoat.component.html',\n  styleUrl: './dopetrenchcoat.component.css'\n})\nexport class DopetrenchcoatComponent\n{\n  hidden = true;\n  basketItemName = '';\n  basketCount = 0;\n  basketPrice = 0;\n  options: Options = {\n    floor: 0,\n    ceil: 100,\n    step: 1\n  }\n\n  utilityService = inject(UtilityService);\n  tradingService = inject(TradingService);\n\n  @Output()\n  emitItemSold = new EventEmitter<itemTransactedEvent>;\n\n  placeSaleOrder($event: itemTransactedEvent)\n  {\n    this.emitItemSold.emit($event);\n  }\n  cancelClicked()\n  {\n    this.hidden = !this.hidden;\n  }\n  sellClicked()\n  {\n    this.emitItemSold.emit({ name: this.basketItemName, price: this.basketPrice, quantity: this.basketCount })\n    this.hidden = true;\n  }\n  showSellFor(basketItemName: string, basketCount: number)\n  {\n    console.log(basketItemName);\n    this.basketPrice = this.tradingService.getStockPrice(basketItemName) ?? 0;\n    this.options = { ...this.options, ceil: basketCount };\n    this.basketItemName = basketItemName;\n    this.hidden = false;\n  }\n}\n",
+            "styleUrl": "./dopetrenchcoat.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"text-2xl mt-3\">In your suitcase</div>\n<div class=\"card w-1/3 text-white\">    \n    <div class=\"grid grid-cols-3\">\n        <div class=\"text-end\">Name</div>\n        <div class=\"text-end\">Count</div>        \n        <div class=\"text-end\">x</div>        \n    </div>    \n    <div *ngFor=\"let s of tradingService.trenchCoatStock()\" class=\"grid grid-cols-3 bg-slate-400\">            \n            <div class=\"ml-2\">{{s.name}}</div>\n            <div class=\"text-end\">{{s.quantity}}</div>              \n            <div class=\"text-end\" class=\"cursor-pointer mr-1 text-end\" (click)=\"showSellFor(s.name,s.quantity)\">Sell</div>              \n        </div>    \n</div>\n\n<div *ngIf=\"!hidden\" class=\"fixed inset-0 z-40 min-h-full overflow-y-auto overflow-x-hidden transition flex items-center\">\n    <!-- overlay -->\n    <div aria-hidden=\"true\" class=\"fixed inset-0 w-full h-full bg-black/50 cursor-pointer\">\n    </div>\n\n    <!-- Modal -->\n    <div class=\"relative w-full cursor-pointer pointer-events-none transition my-auto p-4\">\n        <div\n            class=\"w-full py-2 bg-white cursor-default pointer-events-auto dark:bg-gray-800 relative rounded-xl mx-auto max-w-sm\">\n\n            <button (click)=\"cancelClicked()\" tabindex=\"-1\" type=\"button\" class=\"absolute top-2 right-2 rtl:right-auto rtl:left-2\">\n                <svg title=\"Close\" tabindex=\"-1\" class=\"h-4 w-4 cursor-pointer text-gray-400\"\n                    xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\" aria-hidden=\"true\">\n                    <path fill-rule=\"evenodd\"\n                        d=\"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\"\n                        clip-rule=\"evenodd\"></path>\n                </svg>\n                <span class=\"sr-only\" (click)=\"cancelClicked()\">\n                    Close\n                </span>\n            </button>\n\n            <div class=\"space-y-2 p-2\">\n                <div class=\"p-4 space-y-2 text-center dark:text-white\">\n                    <h2 class=\"text-xl font-bold tracking-tight\" id=\"page-action.heading\">\n                        How many {{this.basketItemName}} do you want to sell at R {{this.basketPrice}} each?\n                    </h2>\n                    <div class=\"grid grid-cols-1\">                        \n                        <div class=\"p-2\"><ngx-slider [options]=\"this.options\" [(value)]=\"this.basketCount\"></ngx-slider></div>\n                    </div>                    \n                </div>\n            </div>\n\n            <div class=\"space-y-2\">\n                <div aria-hidden=\"true\" class=\"border-t dark:border-gray-700 px-2\"></div>\n\n                <div class=\"px-6 py-2\">\n                    <div class=\"grid gap-2 grid-cols-[repeat(auto-fit,minmax(0,1fr))]\">\n                        <button type=\"button\" (click)=\"cancelClicked()\"\n                                class=\"inline-flex items-center justify-center py-1 gap-1 font-medium rounded-lg border transition-colors outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset dark:focus:ring-offset-0 min-h-[2.25rem] px-4 text-sm text-gray-800 bg-white border-gray-300 hover:bg-gray-50 focus:ring-primary-600 focus:text-primary-600 focus:bg-primary-50 focus:border-primary-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:border-gray-600 dark:hover:border-gray-500 dark:text-gray-200 dark:focus:text-primary-400 dark:focus:border-primary-400 dark:focus:bg-gray-800\">\n                                <span class=\"flex items-center gap-1\">\n                                    <span class=\"cursor-pointer\">\n                                        Cancel\n                                    </span>\n                                </span>\n                            </button>\n\n                        <button type=\"submit\" (click)=\"sellClicked()\"\n                                class=\"inline-flex items-center justify-center py-1 gap-1 font-medium rounded-lg border transition-colors outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset dark:focus:ring-offset-0 min-h-[2.25rem] px-4 text-sm text-white shadow focus:ring-white border-transparent bg-red-600 hover:bg-red-500 focus:bg-red-700 focus:ring-offset-red-700\">                        \n                                    <span class=\"cursor-pointer\">\n                                        Sell\n                                    </span>                        \n                            </button>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n"
+        },
+        {
+            "name": "ExpanderComponent",
+            "id": "component-ExpanderComponent-5f4775bd4a8f85f61f4b1f9fdd8104e98a0527b4d1f5ecdf320d38c45deccd81ad110911f07776922a2cf0740d87a886de3accddec0dd7f4c0db37f0a1f41802",
+            "file": "src/app/components/expander/expander.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-expander",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./expander.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "caption",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string | undefined",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "collapsed",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-expander',\n  standalone: true,\n  imports: [CommonModule],\n  templateUrl: './expander.component.html',\n  styleUrl: './expander.component.css'\n})\nexport class ExpanderComponent {\n   @Input() caption!:string|undefined;\n    collapsed = false;\n}\n",
+            "styleUrl": "./expander.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "\n<div (click)=\"collapsed = !collapsed\" class=\"flex cursor-pointer font-extrabold\">{{caption??'Expand me'}} <span *ngIf=\"!collapsed\" ><svg  xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\" class=\"size-6 \">\n  <path fill-rule=\"evenodd\" d=\"M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z\" clip-rule=\"evenodd\" />\n</svg></span><span *ngIf=\"collapsed\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\" class=\"size-6\">\n  <path fill-rule=\"evenodd\" d=\"M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z\" clip-rule=\"evenodd\" />\n</svg>\n</span></div>\n<div *ngIf=\"collapsed\" class=\"mx-7\">\n     <ng-content></ng-content>\n</div>\n\n\n\n"
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-48b9abe37706bc42f20cfa97ed9f943678344ea7d254c0c82183c657750c2191b43486fe730c778627b2ea6aa0e2f33a7abcf3ce08b68ad18b062ad99ea97acb",
+            "file": "src/stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>  <div class=\"storybook-header\">\n    <div>\n      <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n        <g fill=\"none\" fillRule=\"evenodd\">\n          <path\n            d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n            fill=\"#FFF\"\n          />\n          <path\n            d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n            fill=\"#555AB9\"\n          />\n          <path d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\" fill=\"#91BAF8\" />\n        </g>\n      </svg>\n      <h1>Acme</h1>\n    </div>\n    <div>\n      <div *ngIf=\"user\">\n        <span class=\"welcome\">\n          Welcome, <b>{{ user.name }}</b\n          >!\n        </span>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n      </div>\n      <div *ngIf=\"!user\">\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          class=\"margin-left\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          [primary]=\"true\"\n          class=\"margin-left\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </div>\n</header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 66,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 75,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 69,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 72,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "ButtonComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { ButtonComponent } from './button.component';\nimport type { User } from './user';\n\n@Component({\n  selector: 'storybook-header',\n  standalone: true,\n  imports: [CommonModule, ButtonComponent],\n  template: `<header>\n  <div class=\"storybook-header\">\n    <div>\n      <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n        <g fill=\"none\" fillRule=\"evenodd\">\n          <path\n            d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n            fill=\"#FFF\"\n          />\n          <path\n            d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n            fill=\"#555AB9\"\n          />\n          <path d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\" fill=\"#91BAF8\" />\n        </g>\n      </svg>\n      <h1>Acme</h1>\n    </div>\n    <div>\n      <div *ngIf=\"user\">\n        <span class=\"welcome\">\n          Welcome, <b>{{ user.name }}</b\n          >!\n        </span>\n        <storybook-button\n          *ngIf=\"user\"\n          size=\"small\"\n          (onClick)=\"onLogout.emit($event)\"\n          label=\"Log out\"\n        ></storybook-button>\n      </div>\n      <div *ngIf=\"!user\">\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          class=\"margin-left\"\n          (onClick)=\"onLogin.emit($event)\"\n          label=\"Log in\"\n        ></storybook-button>\n        <storybook-button\n          *ngIf=\"!user\"\n          size=\"small\"\n          [primary]=\"true\"\n          class=\"margin-left\"\n          (onClick)=\"onCreateAccount.emit($event)\"\n          label=\"Sign up\"\n        ></storybook-button>\n      </div>\n    </div>\n  </div>\n</header>`,\n  styleUrls: ['./header.css'],\n})\nexport class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n}\n\n.storybook-header svg {\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-header h1 {\n  display: inline-block;\n  vertical-align: top;\n  margin: 6px 0 6px 10px;\n  font-weight: 700;\n  font-size: 20px;\n  line-height: 1;\n}\n\n.storybook-header button + button {\n  margin-left: 10px;\n}\n\n.storybook-header .welcome {\n  margin-right: 10px;\n  color: #333;\n  font-size: 14px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "LandingComponent",
+            "id": "component-LandingComponent-d2855913bc034c55b78e69c3fe2904aa27bbc45492c457c65d8bfe4dab871c9cda675670c38245d6aad8a24898ca57bd2772c373bad27ba0a1bfa9308fb006d2",
+            "file": "src/app/components/landing/landing.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-landing",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./landing.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-landing',\n  standalone: true,\n  imports: [],\n  templateUrl: './landing.component.html',\n  styleUrl: './landing.component.css'\n})\nexport class LandingComponent {\n\n}\n",
+            "styleUrl": "./landing.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "\n<main class=\"max-w-4xl mx-auto\">\n    <section id=\"hero\" class=\"flex flex-col-reverse justify-center sm:flex-row px-6 items-center gap-8 mb-12\">\n    <article class=\"sm:w-1/2\">\n        <h2 class=\"max-w-md text-3xl font-bold text-center sm:text-5xl \n        sm:text-left text-slate-900 dark:text-white\">We boldy go <span class=\"text-indigo-700 dark:text-indigo-300\"> where no rocket</span> has gone before!</h2>\n        <p class=\"max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400\">\n        We are building the next generation of rockets that'll take us from the moon to Mars, Jupiter and beyond!\n        </p>\n        <p class=\"max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400\">\n        Think Acme Rockets!\n        </p>\n    </article>\n    <img src=\"./rocketdab.png\" alt=\"Rocket Dab\" class=\"w-1/2\">\n    </section>\n    <hr class=\"mx-auto bg-black dark:bg-white w-1/2\">\n    <section id=\"rockets\" class=\"p-6 my-12\">\n    <h2 class=\"text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white\">Our rockets</h2>\n\n    <ul class=\"list-none sm:flex-row items-center gap-8 mx-auto my-12 flex flex-col\">\n        <li class=\"w-2/3 sm:w-5/6 flex flex-col \n        items-center\n        border border-solid\n        border-slate-900 \n        dark:border-gray-100 \n        dark:bg-black\n        bg-white py-6 px-2 \n        rounded-3xl \n        shadow-xl\">\n        <img src=\"./rocketman.png\" alt=\"Explorer\" class=\"mb-6 w-1/2\">\n        <h3 class=\"text-3xl text-center text-slate-900 dark:text-white\">Explorer</h3>\n        <p class=\"hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400\">$</p>\n        <p class=\"sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400\">Affordable exploration</p>\n        </li>\n            <li class=\"w-2/3 sm:w-5/6 flex flex-col \n        items-center\n        border border-solid\n        border-slate-900 \n        dark:border-gray-100 \n        dark:bg-black\n        bg-white py-6 px-2 \n        rounded-3xl \n        shadow-xl\">\n        <img src=\"./rocketride.png\" alt=\"Adventurer\" class=\"mb-6 w-1/2\">\n        <h3 class=\"text-3xl text-center text-slate-900 dark:text-white\">Adventurer</h3>\n        <p class=\"hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400\">$$</p>\n        <p class=\"sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400\">Best selling rocket!</p>\n        </li>\n            <li class=\"w-2/3 sm:w-5/6 flex flex-col \n        items-center\n        border border-solid\n        border-slate-900 \n        dark:border-gray-100 \n        dark:bg-black\n        bg-white py-6 px-2 \n        rounded-3xl \n        shadow-xl\">\n        <img src=\"./rocketlaunch.png\" alt=\"Launcher\" class=\"mb-6 w-1/2\">\n        <h3 class=\"text-3xl text-center text-slate-900 dark:text-white\">Launcher</h3>\n        <p class=\"hidden sm:block text-3xl text-center mt-2 text-slate-500 dark:text-slate-400\">$$$</p>\n        <p class=\"sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400\">Our premium rocket!</p>\n        </li>\n    </ul>\n    </section>\n    <hr class=\"mx-auto bg-black dark:bg-white w-1/2\">\n    <section id=\"testimonials\" class=\"p-6 my-12\">\n    <h2 class=\"text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white\">Testimonials</h2>\n    </section>\n    <hr class=\"mx-auto bg-black dark:bg-white w-1/2\">\n    <section id=\"contactus\" class=\"p-6 my-12\">\n    <h2 class=\"text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white\">Contact Us</h2>\n    <form>\n        <div class=\"flex flex-col \">\n        <input placeholder=\"Subject\" class=\"rounded-lg p-2 m-2 text-black\">\n\n        <textarea class=\"rounded-lg border-solid p-2 m-2 h-28 text-black\" placeholder=\"Message\"></textarea>\n        \n        <button class=\"btn self-end rounded-lg btn-primary hover:opacity-90\">Submit</button>\n        </div>\n    </form>\n    </section>\n</main>"
+        },
+        {
+            "name": "LoginComponent",
+            "id": "component-LoginComponent-31f517210c4748cd12473eab8ee821d0ef4873a1cc39316a6eb27c31dbca49afeeec8df7c0a5b014a8b3c3fb6d8559a4e3a89a9bb433e07ec501fa3afa4729f6",
+            "file": "src/app/components/login/login.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-login",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./login.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-login',\n  standalone: true,\n  imports: [],\n  templateUrl: './login.component.html',\n  styleUrl: './login.component.css'\n})\nexport class LoginComponent {\n\n}\n",
+            "styleUrl": "./login.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"grid place-content-center min-h-screen\">\n<div class=\"overflow-hidden bg-white rounded-lg shadow-md\">\n    <div class=\"px-6 py-0\">\n        <div class=\"flex justify-center mx-auto\">\n            <img class=\"w-auto h-7 sm:h-8\" src=\"https://merakiui.com/images/logo.svg\" alt=\"\">\n        </div>\n\n        <h3 class=\"mt-3 text-xl font-medium text-center text-gray-600 dark:text-gray-200\">Welcome Back</h3>\n\n        <p class=\"mt-1 text-center text-gray-500 dark:text-gray-400\">Login or create account</p>\n\n        <form>\n            <div class=\"w-full mt-4\">\n                <input class=\"block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300\" type=\"email\" placeholder=\"Email Address\" aria-label=\"Email Address\" />\n            </div>\n\n            <div class=\"w-full mt-4\">\n                <input class=\"block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-500 bg-white border rounded-lg dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring focus:ring-blue-300\" type=\"password\" placeholder=\"Password\" aria-label=\"Password\" />\n            </div>\n\n            <div class=\"flex items-center justify-between mt-4\">\n                <a href=\"#\" class=\"text-sm text-gray-600 dark:text-gray-200 hover:text-gray-500\">Forget Password?</a>\n\n                <button class=\"px-6 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50\">\n                    Sign In\n                </button>\n            </div>\n        </form>\n    </div>\n\n    <div class=\"flex items-center justify-center py-4 text-center bg-gray-50 dark:bg-gray-700\">\n        <span class=\"text-sm text-gray-600 dark:text-gray-200\">Don't have an account? </span>\n        <a href=\"#\" class=\"mx-2 text-sm font-bold text-blue-500 dark:text-blue-400 hover:underline\">Register</a>\n    </div>\n</div>\n</div>"
+        },
+        {
+            "name": "MaintabComponent",
+            "id": "component-MaintabComponent-05f35cb0db7a731a35f6975cc6c02baca389907c2165ae8a3528189186a5d33fd1910a83af534c8b99acb24e6d9938de83a9c3b047fa945cf6565898d25fd527",
+            "file": "src/app/components/maintab/maintab.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-maintab",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./maintab.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-maintab',\n  standalone: true,\n  imports: [],\n  templateUrl: './maintab.component.html',\n  styleUrl: './maintab.component.css'\n})\nexport class MaintabComponent {\n\n}\n",
+            "styleUrl": "./maintab.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<p>maintab works!</p>\n"
+        },
+        {
+            "name": "MapComponent",
+            "id": "component-MapComponent-e137e2a2cea1afd3414490e6f891e8bfa9a31e29cf8e0dd953391f03bdf794360fbaf497ea68ea90f5e591d4afaf64b110d48ee3df6db13b179ce76d6a99fd4d",
+            "file": "src/app/components/map/map.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-map",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./map.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "clicked",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 12,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-map',\n  standalone: true,\n  imports: [],\n  templateUrl: './map.component.html',\n  styleUrl: './map.component.css'\n})\nexport class MapComponent\n{\n  clicked()\n  {\n    console.log('got clicked')\n  }\n}\n",
+            "styleUrl": "./map.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<svg width=\"800\" height=\"600\" xmlns=\"http://www.w3.org/2000/svg\">\n <g>  \n  <rect fill=\"#529D94\" stroke=\"#000\" stroke-width=\"0\" stroke-dasharray=\"2,2\" x=\"98\" y=\"119\" width=\"1\" height=\"0\" id=\"svg_2\"/>\n  <rect fill=\"#529D94\" stroke=\"#000\" stroke-width=\"0\" stroke-dasharray=\"2,2\" x=\"145\" y=\"117\" width=\"1\" height=\"0\" id=\"svg_4\"/>\n  <rect fill=\"#C48157\" stroke=\"#000\" stroke-width=\"2\" x=\"62\" y=\"84\" width=\"147\" height=\"100\" id=\"svg_6\"/>\n </g>\n</svg>"
+        },
+        {
+            "name": "NavbarComponent",
+            "id": "component-NavbarComponent-7f757fa60a120decbf7fc6b000fcd07713af72aefea5a81d22818b63c8302adcf725ced0d6bfc68cd1091b784d729574b0a2224ac9a51ef97b01d3e71f0c53f2",
+            "file": "src/app/components/navbar/navbar.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-navbar",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./navbar.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "hambugerButton",
+                    "defaultValue": "ElementRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 15,
+                    "decorators": [
+                        {
+                            "name": "ViewChild",
+                            "stringifiedArguments": "'hambugerButton'"
+                        }
+                    ],
+                    "modifierKind": [
+                        170
+                    ]
+                },
+                {
+                    "name": "hideMenu",
+                    "defaultValue": "true",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 14
+                },
+                {
+                    "name": "title",
+                    "defaultValue": "'tailpdf'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 13
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "toggleMenu",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "RouterModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, ElementRef, ViewChild } from '@angular/core';\nimport { RouterModule } from '@angular/router';\n\n@Component({\n  selector: 'app-navbar',\n  standalone: true,\n  imports: [CommonModule, RouterModule],\n  templateUrl: './navbar.component.html',\n  styleUrl: './navbar.component.css'\n})\nexport class NavbarComponent  {\n  title = 'tailpdf';\n  hideMenu = true;\n  @ViewChild('hambugerButton') hambugerButton = ElementRef;  \n\n  toggleMenu()\n  {\n    this.hideMenu = !this.hideMenu;\n  }\n}\n",
+            "styleUrl": "./navbar.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"bg-slate-50 dark:bg-black relative dark:text-white\">\n    <header class=\"bg-purple-800 shadow text-white top-0 z-10\">\n    <section class=\"max-w-4xl xl:mx-auto p-4 flex justify-between items-center\">\n      <h1 class=\"text-3xl font-medium\">\n        <a href=\"#hero\">🚀 Research Assistant</a>\n      </h1>\n      <div>\n        <button id=\"mobile-open-button\" (click)=\"toggleMenu()\"\n        class=\"text-3xl sm:hidden focus:outline-none\">&#9776;</button>\n        <nav class=\"hidden sm:block space-x-8 text-xl\" aria-label=\"main\">\n          <a [routerLink]=\"['/research']\" class=\"hover:opacity-90\">Research</a>\n          <a [routerLink]=\"['/documents']\" class=\"hover:opacity-90\">Documents</a>\n          <a [routerLink]=\"['/login']\" class=\"hover:opacity-90\">Login</a>\n        </nav>\n      </div>\n    </section>           \n    <section #mobileMenu  (click)=\"toggleMenu()\" id=\"mobile-menu\" class=\"absolute top-0 bg-black w-full text-5xl flex-col justify-content-center origin-top animate-open-menu\">\n      <button #hamburgerButton  *ngIf=\"!hideMenu\" class=\"text-8xl self-end px-6\">\n        &times;\n      </button>\n      <nav aria-label=\"mobile\" class=\"flex flex-col min-h-screen items-center py-8\" *ngIf=\"!hideMenu\">\n          <a [routerLink]=\"['/research']\" class=\"hover:opacity-90\">Research</a>\n          <a [routerLink]=\"['/documents']\" class=\"hover:opacity-90\">Documents</a>\n          <a [routerLink]=\"['/login']\" class=\"hover:opacity-90\">Login</a>\n      </nav>\n    </section>         \n</header>\n</div>"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-21dd6eb370b4983b5c21c84d40e6f54d266a9d9af9889e6e76b35c43058bd53b3e451bad089d5adf4bea46647ba10265a2fa8cb15630398e75636307d4817fc6",
+            "file": "src/stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>  <storybook-header\n    [user]=\"user\"\n    (onLogout)=\"doLogout()\"\n    (onLogin)=\"doLogin()\"\n    (onCreateAccount)=\"doCreateAccount()\"\n  ></storybook-header>\n  <section class=\"storybook-page\">\n    <h2>Pages in Storybook</h2>\n    <p>\n      We recommend building UIs with a\n      <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n        <strong>component-driven</strong>\n      </a>\n      process starting with atomic components and ending with pages.\n    </p>\n    <p>\n      Render pages with mock data. This makes it easy to build and review page states without\n      needing to navigate to them in your app. Here are some handy patterns for managing page data\n      in Storybook:\n    </p>\n    <ul>\n      <li>\n        Use a higher-level connected component. Storybook helps you compose such data from the\n        \"args\" of child component stories\n      </li>\n      <li>\n        Assemble data in the page component from your services. You can mock these services out\n        using Storybook.\n      </li>\n    </ul>\n    <p>\n      Get a guided tutorial on component-driven development at\n      <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n        Storybook tutorials\n      </a>\n      . Read more in the\n      <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n      .\n    </p>\n    <div class=\"tip-wrapper\">\n      <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n      <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n        <g fill=\"none\" fillRule=\"evenodd\">\n          <path\n            d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n            id=\"a\"\n            fill=\"#999\"\n          />\n        </g>\n      </svg>\n      Viewports addon in the toolbar\n    </div>\n  </section>\n</article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 69
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "doCreateAccount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 79,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogin",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 75,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 71,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "HeaderComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { HeaderComponent } from './header.component';\nimport type { User } from './user';\n\n@Component({\n  selector: 'storybook-page',\n  standalone: true,\n  imports: [CommonModule, HeaderComponent],\n  template: `<article>\n  <storybook-header\n    [user]=\"user\"\n    (onLogout)=\"doLogout()\"\n    (onLogin)=\"doLogin()\"\n    (onCreateAccount)=\"doCreateAccount()\"\n  ></storybook-header>\n  <section class=\"storybook-page\">\n    <h2>Pages in Storybook</h2>\n    <p>\n      We recommend building UIs with a\n      <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n        <strong>component-driven</strong>\n      </a>\n      process starting with atomic components and ending with pages.\n    </p>\n    <p>\n      Render pages with mock data. This makes it easy to build and review page states without\n      needing to navigate to them in your app. Here are some handy patterns for managing page data\n      in Storybook:\n    </p>\n    <ul>\n      <li>\n        Use a higher-level connected component. Storybook helps you compose such data from the\n        \"args\" of child component stories\n      </li>\n      <li>\n        Assemble data in the page component from your services. You can mock these services out\n        using Storybook.\n      </li>\n    </ul>\n    <p>\n      Get a guided tutorial on component-driven development at\n      <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n        Storybook tutorials\n      </a>\n      . Read more in the\n      <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n      .\n    </p>\n    <div class=\"tip-wrapper\">\n      <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n      <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n        <g fill=\"none\" fillRule=\"evenodd\">\n          <path\n            d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n            id=\"a\"\n            fill=\"#999\"\n          />\n        </g>\n      </svg>\n      Viewports addon in the toolbar\n    </div>\n  </section>\n</article>`,\n  styleUrls: ['./page.css'],\n})\nexport class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-page {\n  margin: 0 auto;\n  padding: 48px 20px;\n  max-width: 600px;\n  color: #333;\n  font-size: 14px;\n  line-height: 24px;\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n}\n\n.storybook-page h2 {\n  display: inline-block;\n  vertical-align: top;\n  margin: 0 0 4px;\n  font-weight: 700;\n  font-size: 32px;\n  line-height: 1;\n}\n\n.storybook-page p {\n  margin: 1em 0;\n}\n\n.storybook-page a {\n  color: #1ea7fd;\n  text-decoration: none;\n}\n\n.storybook-page ul {\n  margin: 1em 0;\n  padding-left: 30px;\n}\n\n.storybook-page li {\n  margin-bottom: 8px;\n}\n\n.storybook-page .tip {\n  display: inline-block;\n  vertical-align: top;\n  margin-right: 10px;\n  border-radius: 1em;\n  background: #e7fdd8;\n  padding: 4px 12px;\n  color: #66bf3c;\n  font-weight: 700;\n  font-size: 11px;\n  line-height: 12px;\n}\n\n.storybook-page .tip-wrapper {\n  margin-top: 40px;\n  margin-bottom: 40px;\n  font-size: 13px;\n  line-height: 20px;\n}\n\n.storybook-page .tip-wrapper svg {\n  display: inline-block;\n  vertical-align: top;\n  margin-top: 3px;\n  margin-right: 4px;\n  width: 12px;\n  height: 12px;\n}\n\n.storybook-page .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": "",
+            "extends": []
+        },
+        {
+            "name": "TaskComponent",
+            "id": "component-TaskComponent-df527b1720a705e012df5b4b04837d2f9a80aa7ee0860c22f524ed43d26d83d6a779b29b1c6bb2515a74bba709d32139d4165882ac4e9370d87be4ae988618fa",
+            "file": "src/app/components/task/task.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-task",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./task.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "task",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "any",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onArchiveTask",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onPinTask",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'app-task',\n  standalone: true,\n  imports: [],\n  templateUrl: './task.component.html',\n  styleUrl: './task.component.css'\n})\nexport default class TaskComponent\n{\n  @Input() task: any;\n  @Output()\n  onPinTask = new EventEmitter<Event>();\n  @Output()\n  onArchiveTask = new EventEmitter<Event>();\n}\n",
+            "styleUrl": "./task.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"list-none bg-violet-300 p-4 shadow-sm border-double border-red\">\n    <label for=\"title\" [attr.aria-label]=\"task.title + ''\">\n    <input \n        type=\"checkbox\"\n        class=\"h-5 text-white\"\n        [value]=\"task.title\"\n        readonly=\"true\"\n        [checked]=\"task.state=='TASK_ARCHIVED'\"\n        id=\"title\"\n        name=\"title\"\n        \n    />\n    {{task.title}}\n    </label>\n</div>"
+        },
+        {
+            "name": "TaskListComponent",
+            "id": "component-TaskListComponent-d3f5217dedd27ca4f945a3b90f40ca673066eecf4d08e604db3ba3e1b4cf0b9bf7bfb0c7a4b57800161b4c9f7688b979e5e37e1943a59c8a0a1fdeef3c9a983a",
+            "file": "src/app/components/task-list/task-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-task-list",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./task-list.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "loading",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nChecks if it's in loading state",
+                    "description": "<p>Checks if it&#39;s in loading state</p>\n",
+                    "line": 18,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "tasks",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nThe list of tasks",
+                    "description": "<p>The list of tasks</p>\n",
+                    "line": 15,
+                    "type": "Task[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onArchiveTask",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nEvent to change the task to archived",
+                    "description": "<p>Event to change the task to archived</p>\n",
+                    "line": 28,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onPinTask",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nEvent to change the task to pinned",
+                    "description": "<p>Event to change the task to pinned</p>\n",
+                    "line": 23,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "CommonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "TaskComponent",
+                    "type": "component"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, EventEmitter, Input, Output } from '@angular/core';\nimport TaskComponent from \"../task/task.component\";\n\n@Component({\n  selector: 'app-task-list',\n  standalone: true,\n  imports: [CommonModule, TaskComponent],\n  templateUrl: './task-list.component.html',\n  styleUrl: './task-list.component.css'\n})\nexport default class TaskListComponent\n{\n  /** The list of tasks */\n  @Input() tasks: Task[] = [];\n\n  /** Checks if it's in loading state */\n  @Input() loading = false;\n\n  /** Event to change the task to pinned */\n  // tslint:disable-next-line: no-output-on-prefix\n  @Output()\n  onPinTask = new EventEmitter<Event>();\n\n  /** Event to change the task to archived */\n  // tslint:disable-next-line: no-output-on-prefix\n  @Output()\n  onArchiveTask = new EventEmitter<Event>();\n\n}\n",
+            "styleUrl": "./task-list.component.css",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div class=\"w-1/5 list-items border-solid border-blue-950 shadow-black shadow-md bg-stone-400 m-5\">\n    <div *ngIf=\"loading\">loading</div>\n    <div *ngIf=\"!loading && tasks.length ===0\">empty</div>\n    <app-task \n        *ngFor=\"let task of tasks\"\n        [task]=\"task\"\n        (onArchiveTask)=\"onArchiveTask.emit($event)\"\n        (onPinTask)=\"onPinTask.emit($event)\"></app-task>   \n    \n</div>\n"
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "actions",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/state/task.state.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    ARCHIVE_TASK: 'ARCHIVE_TASK',\n    PIN_TASK: 'PIN_TASK',\n}"
+            },
+            {
+                "name": "appConfig",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/app.config.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ApplicationConfig",
+                "defaultValue": "{\n  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]\n}"
+            },
+            {
+                "name": "defaultTasks",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/state/task.state.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "[]",
+                "defaultValue": "[\n    { id: '1', title: 'Something', state: 'TASK_INBOX' },\n    { id: '2', title: 'Something more', state: 'TASK_INBOX' },\n    { id: '3', title: 'Something else', state: 'TASK_INBOX' },\n    { id: '4', title: 'Something again', state: 'TASK_INBOX' },\n]"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "src/app/state/task.state.ts": [
+                {
+                    "name": "actions",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/state/task.state.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    ARCHIVE_TASK: 'ARCHIVE_TASK',\n    PIN_TASK: 'PIN_TASK',\n}"
+                },
+                {
+                    "name": "defaultTasks",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/state/task.state.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "[]",
+                    "defaultValue": "[\n    { id: '1', title: 'Something', state: 'TASK_INBOX' },\n    { id: '2', title: 'Something more', state: 'TASK_INBOX' },\n    { id: '3', title: 'Something else', state: 'TASK_INBOX' },\n    { id: '4', title: 'Something again', state: 'TASK_INBOX' },\n]"
+                }
+            ],
+            "src/app/app.config.ts": [
+                {
+                    "name": "appConfig",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/app.config.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ApplicationConfig",
+                    "defaultValue": "{\n  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 4,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "src/app/app.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "AppComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/app.config.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "appConfig",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/card/card.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "CardComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/documents/documents.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DocumentsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/dopeplay/dopeplay.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DopeplayComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/8",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/dopestats/dopestats.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DopeStatsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/dopestocks/dopestocks.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DopestocksComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/13",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/dopetrenchcoat/dopetrenchcoat.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DopetrenchcoatComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/13",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/expander/expander.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ExpanderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/landing/landing.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LandingComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/login/login.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "LoginComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/maintab/maintab.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MaintabComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/map/map.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "MapComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/navbar/navbar.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "NavbarComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/components/task-list/task-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TaskListComponent",
+                "coveragePercent": 80,
+                "coverageCount": "4/5",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/app/components/task/task.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TaskComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/dopeStat.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "dopeStat",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/dopeStock.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "dopeStock",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/dopeTrenchStockItem.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "dopeTrenchStockItem",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/itemTransactedEvent.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "itemTransactedEvent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/stockConfiguration.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "stockConfiguration",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/models/task.model.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "Task",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/event-processor.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "EventProcessorService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/market.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "MarketService",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/stocking.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "StockingService",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/trading.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "TradingService",
+                "coveragePercent": 0,
+                "coverageCount": "0/12",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/services/utility.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "UtilityService",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "ArchiveTask",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "class",
+                "linktype": "classe",
+                "name": "PinTask",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "TasksState",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "TaskStateModel",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "actions",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/state/task.state.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "defaultTasks",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "src/stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/user.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            }
+        ]
+    }
+}

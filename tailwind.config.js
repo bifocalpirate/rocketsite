@@ -5,6 +5,10 @@ module.exports = {
   plugins: [],
   theme: {
     extend: {
+      colors: {
+        primary: "#6495ED",
+        card_bg:  "#66bb6a"
+      },
       screens: {
         widescreen: { raw: "(min-aspect-ratio: 3/2)" },
         tallscreen: { raw: "(min-aspect-ratio: 13/20)" },

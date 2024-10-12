@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .card {
+    @apply text-xl text-black bg-card_bg rounded-sm shadow-black shadow-md p-2;
+  }
+  .card-header {
+    @apply bg-amber-300;
+  }
+
+  .btn {
+    @apply border w-20 mr-3 mt-3;
+  }
+  .btn-primary {
+    @apply shadow-sm shadow-black drop-shadow bg-primary w-28 active:scale-90 text-white text-xl h-10;
+  }
+}

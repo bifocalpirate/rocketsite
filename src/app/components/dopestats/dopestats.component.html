@@ -1,0 +1,25 @@
+<div class="text-2xl mt-3">Progress</div>
+<div class="card w-40">
+    <div class="text-white grid grid-rows-1 grid-flow-col">
+        <div class="ml-1.5">Day</div>
+        <div class="text-end">{{tradingService.clock()}}</div>
+    </div>
+    <hr>    
+    <div class="grid grid-rows-1 grid-flow-col">
+        <div class="ml-1.5">Cash</div>
+        <div class="text-end">{{dopeStat!.cash}}</div>
+    </div>
+    <div class="grid grid-rows-1 grid-flow-col">
+        <div class="ml-1.5">Debt</div>
+        <div class="text-end">{{dopeStat!.debt}}</div>
+    </div>
+    
+    <div class="grid grid-rows-1 grid-flow-col">
+        <div class="ml-1.5">Stokvel</div>
+        <div class="text-end">{{dopeStat!.stokvel}}</div>
+    </div>
+    <div>
+        <div class="ml-1.5">Upcoming debit orders</div>
+        <div class="text-end"><app-expander caption="Accounts" >accounts</app-expander></div>
+    </div>
+</div>

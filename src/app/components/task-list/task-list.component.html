@@ -1,0 +1,10 @@
+<div class="w-1/5 list-items border-solid border-blue-950 shadow-black shadow-md bg-stone-400 m-5">
+    <div *ngIf="loading">loading</div>
+    <div *ngIf="!loading && tasks.length ===0">empty</div>
+    <app-task 
+        *ngFor="let task of tasks"
+        [task]="task"
+        (onArchiveTask)="onArchiveTask.emit($event)"
+        (onPinTask)="onPinTask.emit($event)"></app-task>   
+    
+</div>

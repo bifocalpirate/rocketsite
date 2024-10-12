@@ -1,0 +1,9 @@
+
+
+<app-dopestats></app-dopestats>
+<app-dopestocks (emitItemPurchased)="processPurchase($event)"></app-dopestocks>
+<app-dopetrenchcoat (emitItemSold)="processSale($event)" ></app-dopetrenchcoat>
+<app-map></app-map>
+<button class="btn btn-primary active:text-2xl" (click)="move()">Move</button>
+
+{{errorMessage}}

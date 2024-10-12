@@ -1,0 +1,15 @@
+<div class="list-none bg-violet-300 p-4 shadow-sm border-double border-red">
+    <label for="title" [attr.aria-label]="task.title + ''">
+    <input 
+        type="checkbox"
+        class="h-5 text-white"
+        [value]="task.title"
+        readonly="true"
+        [checked]="task.state=='TASK_ARCHIVED'"
+        id="title"
+        name="title"
+        
+    />
+    {{task.title}}
+    </label>
+</div>
